@@ -1,1 +1,402 @@
-{"sections":{"main":{"type":"main-product","blocks":{"custom_liquid_dfrazP":{"type":"custom_liquid","settings":{"custom_liquid":"<div class=\"vendorLink\">Brand: {{ product.vendor | link_to_vendor }}<\/div>"}},"vendor":{"type":"text","disabled":true,"settings":{"text":"Brand: {{ product.vendor }}","text_style":"body"}},"title":{"type":"title","settings":{}},"judge_me_reviews_preview_badge_UakXWw":{"type":"shopify:\/\/apps\/judge-me-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8","settings":{}},"price":{"type":"price","settings":{}},"variant_picker":{"type":"variant_picker","settings":{"picker_type":"button","swatch_shape":"circle"}},"quantity_selector":{"type":"quantity_selector","settings":{}},"buy_buttons":{"type":"buy_buttons","settings":{"show_dynamic_checkout":true,"show_gift_card_recipient":true}},"description":{"type":"description","settings":{}},"collapsible_tab_YMMUXY":{"type":"collapsible_tab","settings":{"heading":"How to Use","icon":"none","content":"{{ product.metafields.custom.how_it_works_ | metafield_tag }}","page":""}},"collapsible_tab_qAVWnU":{"type":"collapsible_tab","settings":{"heading":"Formulated Without","icon":"none","content":"<p>All O K T A's products are formulated without harsh dangerous ingredients. Our products are proudly:<\/p><ul><li>Cruelty free<\/li><li>Vegan friendly <\/li><li>Silicon Free<\/li><li>Sulfate Free<\/li><li>Paraben Free<\/li><li>Phthalates Free<\/li><li>Petrochemical Free<\/li><li>No Artificial Fragrance<\/li><\/ul>","page":""}},"collapsible_tab_kpPaVK":{"type":"collapsible_tab","settings":{"heading":"Ingredients","icon":"none","content":"{{ product.metafields.custom.ingredients_text | metafield_tag }}","page":""}},"sku_VCMiqk":{"type":"sku","disabled":true,"settings":{"text_style":"body"}},"collapsible_tab_zqkcrh":{"type":"collapsible_tab","disabled":true,"settings":{"heading":"Notes","icon":"none","content":"<p>{{ product.metafields.custom.fragrance_note.value }}<br\/><br\/> {{ product.metafields.custom.top_notes.value }} <br\/>{{ product.metafields.custom.heart_notes.value }}<br\/>{{ product.metafields.custom.base_notes.value }}<\/p>","page":""}},"collapsible_tab_ykrCiC":{"type":"collapsible_tab","disabled":true,"settings":{"heading":"Product Details","icon":"none","content":"<p> {{ product.metafields.custom.height.value }} <br\/> {{ product.metafields.custom.length.value }}<br\/> {{ product.metafields.custom.width.value }}<\/p>","page":""}}},"block_order":["custom_liquid_dfrazP","vendor","title","judge_me_reviews_preview_badge_UakXWw","price","variant_picker","quantity_selector","buy_buttons","description","collapsible_tab_YMMUXY","collapsible_tab_qAVWnU","collapsible_tab_kpPaVK","sku_VCMiqk","collapsible_tab_zqkcrh","collapsible_tab_ykrCiC"],"custom_css":[],"settings":{"enable_sticky_info":true,"color_scheme":"scheme-1","media_size":"medium","constrain_to_viewport":false,"media_fit":"contain","gallery_layout":"thumbnail","media_position":"left","image_zoom":"hover","mobile_thumbnails":"show","hide_variants":false,"enable_video_looping":false,"padding_top":24,"padding_bottom":100}},"image_with_text_Tzx89M":{"type":"image-with-text","blocks":{"heading_MkCrQ3":{"type":"heading","settings":{"heading":"Ingredients","heading_size":"h2"}},"text_H44dpw":{"type":"text","settings":{"text":"{{ product.metafields.custom.ingredients_text | metafield_tag }}","text_style":"body"}}},"block_order":["heading_MkCrQ3","text_H44dpw"],"disabled":true,"custom_css":[":after {display: none;}"],"settings":{"image":"shopify:\/\/shop_images\/Shop_Now_Swipe_Up_Post_1080_x_1350_px_1.jpg","height":"adapt","desktop_image_width":"small","layout":"image_first","desktop_content_position":"top","desktop_content_alignment":"left","content_layout":"no-overlap","section_color_scheme":"scheme-1","color_scheme":"scheme-4","image_behavior":"none","mobile_content_alignment":"left","padding_top":0,"padding_bottom":0}},"image_with_text_PWAaKp":{"type":"image-with-text","blocks":{"heading_bHnPY9":{"type":"heading","settings":{"heading":"Benefits & How To Use","heading_size":"h2"}},"text_KEbpFr":{"type":"text","settings":{"text":"{{ product.metafields.custom.how_it_works_ | metafield_tag }}","text_style":"body"}}},"block_order":["heading_bHnPY9","text_KEbpFr"],"disabled":true,"custom_css":[],"settings":{"image":"shopify:\/\/shop_images\/jojoba-oil04231_1500x_jpg.webp","height":"adapt","desktop_image_width":"small","layout":"text_first","desktop_content_position":"top","desktop_content_alignment":"left","content_layout":"no-overlap","section_color_scheme":"scheme-1","color_scheme":"scheme-4","image_behavior":"none","mobile_content_alignment":"left","padding_top":0,"padding_bottom":0}},"image_with_text_ecALAw":{"type":"image-with-text","blocks":{"heading_FAwwFe":{"type":"heading","settings":{"heading":"","heading_size":"h2"}},"text_4rkgNa":{"type":"text","settings":{"text":"","text_style":"body"}}},"block_order":["heading_FAwwFe","text_4rkgNa"],"disabled":true,"settings":{"image":"shopify:\/\/shop_images\/hitw-img.png","height":"adapt","desktop_image_width":"small","layout":"text_first","desktop_content_position":"top","desktop_content_alignment":"left","content_layout":"no-overlap","section_color_scheme":"scheme-1","color_scheme":"scheme-3","image_behavior":"none","mobile_content_alignment":"left","padding_top":36,"padding_bottom":36}},"image_banner_3TcTBE":{"type":"image-banner","blocks":{"heading_yNpGV3":{"type":"heading","disabled":true,"settings":{"heading":"Image banner","heading_size":"h1"}},"text_DkRyGp":{"type":"text","disabled":true,"settings":{"text":"Give customers details about the banner image(s) or content on the template.","text_style":"body"}},"buttons_AmbAcj":{"type":"buttons","disabled":true,"settings":{"button_label_1":"Button label","button_link_1":"","button_style_secondary_1":false,"button_label_2":"Button label","button_link_2":"","button_style_secondary_2":false}}},"block_order":["heading_yNpGV3","text_DkRyGp","buttons_AmbAcj"],"settings":{"image":"shopify:\/\/shop_images\/CORPUS_BB-BSLifeStyle12_AR_010.jpg","image_overlay_opacity":0,"image_height":"medium","desktop_content_position":"middle-center","show_text_box":false,"desktop_content_alignment":"center","color_scheme":"","image_behavior":"fixed","mobile_content_alignment":"center","stack_images_on_mobile":false,"show_text_below":false}},"related-products":{"type":"related-products","custom_css":[".card__inner {max-height: 200px; height: 200px !important;}"],"settings":{"heading":"Other products you may like","heading_size":"h2","products_to_show":4,"columns_desktop":4,"color_scheme":"scheme-1","image_ratio":"adapt","image_shape":"default","show_secondary_image":true,"show_vendor":true,"show_rating":false,"columns_mobile":"2","padding_top":100,"padding_bottom":68}},"17081006824bb18a3b":{"type":"apps","blocks":{"judge_me_reviews_review_widget_M8rTpJ":{"type":"shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8","settings":{}}},"block_order":["judge_me_reviews_review_widget_M8rTpJ"],"settings":{"include_margins":true}},"1712104810ebd62411":{"type":"apps","blocks":{"instafeed_app_block_AzV48m":{"type":"shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5","settings":{"title":"@DISCOVEROKTA","title_color":"","alignment":"center","background_color":"","html_area":""}}},"block_order":["instafeed_app_block_AzV48m"],"custom_css":[],"settings":{"include_margins":false}}},"order":["main","image_with_text_Tzx89M","image_with_text_PWAaKp","image_with_text_ecALAw","image_banner_3TcTBE","related-products","17081006824bb18a3b","1712104810ebd62411"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "custom_liquid_dfrazP": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<div class=\"vendorLink\">Brand: {{ product.vendor | link_to_vendor }}</div>"
+          }
+        },
+        "vendor": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Brand: {{ product.vendor }}",
+            "text_style": "body"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "judge_me_reviews_preview_badge_UakXWw": {
+          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "wrapped_app_block_product_9cVxfX": {
+          "type": "shopify://apps/wrapped/blocks/app-block.product/1714fc7d-e525-4a14-8c3e-1b6ed95734c5",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
+        "collapsible_tab_YMMUXY": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "How to Use",
+            "icon": "none",
+            "content": "{{ product.metafields.custom.how_it_works_ | metafield_tag }}",
+            "page": ""
+          }
+        },
+        "collapsible_tab_qAVWnU": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Formulated Without",
+            "icon": "none",
+            "content": "<p>All O K T A's products are formulated without harsh dangerous ingredients. Our products are proudly:</p><ul><li>Cruelty free</li><li>Vegan friendly </li><li>Silicon Free</li><li>Sulfate Free</li><li>Paraben Free</li><li>Phthalates Free</li><li>Petrochemical Free</li><li>No Artificial Fragrance</li></ul>",
+            "page": ""
+          }
+        },
+        "collapsible_tab_kpPaVK": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Ingredients",
+            "icon": "none",
+            "content": "{{ product.metafields.custom.ingredients_text | metafield_tag }}",
+            "page": ""
+          }
+        },
+        "sku_VCMiqk": {
+          "type": "sku",
+          "disabled": true,
+          "settings": {
+            "text_style": "body"
+          }
+        },
+        "collapsible_tab_zqkcrh": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "Notes",
+            "icon": "none",
+            "content": "<p>{{ product.metafields.custom.fragrance_note.value }}<br/><br/> {{ product.metafields.custom.top_notes.value }} <br/>{{ product.metafields.custom.heart_notes.value }}<br/>{{ product.metafields.custom.base_notes.value }}</p>",
+            "page": ""
+          }
+        },
+        "collapsible_tab_ykrCiC": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "Product Details",
+            "icon": "none",
+            "content": "<p> {{ product.metafields.custom.height.value }} <br/> {{ product.metafields.custom.length.value }}<br/> {{ product.metafields.custom.width.value }}</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "custom_liquid_dfrazP",
+        "vendor",
+        "title",
+        "judge_me_reviews_preview_badge_UakXWw",
+        "price",
+        "variant_picker",
+        "quantity_selector",
+        "wrapped_app_block_product_9cVxfX",
+        "buy_buttons",
+        "description",
+        "collapsible_tab_YMMUXY",
+        "collapsible_tab_qAVWnU",
+        "collapsible_tab_kpPaVK",
+        "sku_VCMiqk",
+        "collapsible_tab_zqkcrh",
+        "collapsible_tab_ykrCiC"
+      ],
+      "custom_css": [],
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "scheme-1",
+        "media_size": "medium",
+        "constrain_to_viewport": false,
+        "media_fit": "contain",
+        "gallery_layout": "thumbnail",
+        "media_position": "left",
+        "image_zoom": "hover",
+        "mobile_thumbnails": "show",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 24,
+        "padding_bottom": 100
+      }
+    },
+    "image_with_text_Tzx89M": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_MkCrQ3": {
+          "type": "heading",
+          "settings": {
+            "heading": "Ingredients",
+            "heading_size": "h2"
+          }
+        },
+        "text_H44dpw": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields.custom.ingredients_text | metafield_tag }}",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_MkCrQ3",
+        "text_H44dpw"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ":after {display: none;}"
+      ],
+      "settings": {
+        "page_width": false,
+        "image": "shopify://shop_images/Shop_Now_Swipe_Up_Post_1080_x_1350_px_1.jpg",
+        "height": "adapt",
+        "desktop_image_width": "small",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "scheme-1",
+        "color_scheme": "scheme-4",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "image_with_text_PWAaKp": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_bHnPY9": {
+          "type": "heading",
+          "settings": {
+            "heading": "Benefits & How To Use",
+            "heading_size": "h2"
+          }
+        },
+        "text_KEbpFr": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields.custom.how_it_works_ | metafield_tag }}",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_bHnPY9",
+        "text_KEbpFr"
+      ],
+      "disabled": true,
+      "custom_css": [],
+      "settings": {
+        "page_width": false,
+        "image": "shopify://shop_images/jojoba-oil04231_1500x_jpg.webp",
+        "height": "adapt",
+        "desktop_image_width": "small",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "scheme-1",
+        "color_scheme": "scheme-4",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "image_with_text_ecALAw": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_FAwwFe": {
+          "type": "heading",
+          "settings": {
+            "heading": "",
+            "heading_size": "h2"
+          }
+        },
+        "text_4rkgNa": {
+          "type": "text",
+          "settings": {
+            "text": "",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_FAwwFe",
+        "text_4rkgNa"
+      ],
+      "disabled": true,
+      "settings": {
+        "page_width": false,
+        "image": "shopify://shop_images/hitw-img.png",
+        "height": "adapt",
+        "desktop_image_width": "small",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "scheme-1",
+        "color_scheme": "scheme-3",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_banner_3TcTBE": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_yNpGV3": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h1"
+          }
+        },
+        "text_DkRyGp": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        },
+        "buttons_AmbAcj": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_yNpGV3",
+        "text_DkRyGp",
+        "buttons_AmbAcj"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/CORPUS_BB-BSLifeStyle12_AR_010.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "fixed",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "custom_css": [
+        ".card__inner {max-height: 200px; height: 200px !important;}"
+      ],
+      "settings": {
+        "heading": "Other products you may like",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "color_scheme": "scheme-1",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": true,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "padding_top": 100,
+        "padding_bottom": 68
+      }
+    },
+    "17081006824bb18a3b": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_M8rTpJ": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_M8rTpJ"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "1712104810ebd62411": {
+      "type": "apps",
+      "blocks": {
+        "instafeed_app_block_AzV48m": {
+          "type": "shopify://apps/instafeed/blocks/app-block/c447db20-095d-4a10-9725-b5977662c9d5",
+          "settings": {
+            "title": "@DISCOVEROKTA",
+            "title_color": "",
+            "alignment": "center",
+            "background_color": "",
+            "feed_id": "",
+            "html_area": ""
+          }
+        }
+      },
+      "block_order": [
+        "instafeed_app_block_AzV48m"
+      ],
+      "custom_css": [],
+      "settings": {
+        "include_margins": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_with_text_Tzx89M",
+    "image_with_text_PWAaKp",
+    "image_with_text_ecALAw",
+    "image_banner_3TcTBE",
+    "related-products",
+    "17081006824bb18a3b",
+    "1712104810ebd62411"
+  ]
+}
