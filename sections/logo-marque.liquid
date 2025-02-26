@@ -1,0 +1,65 @@
+{% schema %}
+{
+  "name": "Logo Marque",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "logo",
+      "name": "Logo",
+      "settings": [
+        {
+          "type": "image_picker",
+          "label": "Logo Image",
+          "id": "logo_image",
+          "info": "Add your logo image here."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Default",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}
+
+<div class="logo-marque-container">
+  <div class="logo-marque-wrapper">
+    {% for block in section.blocks %}
+      {% if block.settings.logo_image %}
+        <div class="logo-marque-item">
+          <img src="{{ block.settings.logo_image | img_url: 'original' }}" alt="Logo" class="logo-marque-image">
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
+
+<style>
+  .logo-marque-container {
+    display: flex;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .logo-marque-wrapper {
+    display: flex;
+    animation: marquee 15s linear infinite;
+  }
+
+  .logo-marque-item {
+    padding: 0 20px;
+  }
+
+  .logo-marque-image {
+    height: auto;
+    max-width: 120px; /* Adjust based on your preference */
+  }
+
+  @keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+  }
+</style>

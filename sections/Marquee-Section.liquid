@@ -1,0 +1,115 @@
+<style>
+  .marquee-container {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    width: 100%;
+    padding: 20px 0;
+  }
+
+  .marquee-content {
+    display: inline-flex;
+    animation: marquee 40s linear infinite;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-right: 50px;
+  }
+
+  .marquee-content a {
+    margin: 0 30px;
+  }
+
+  .marquee-content img {
+    display: block;
+    width: 190px;
+    object-fit: fill;
+    height: auto;
+  }
+
+  .marquee-container:hover .marquee-content {
+    animation-play-state: paused;
+  }
+
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+
+    to {
+      transform: translateX(-100%);
+    }
+  }
+</style>
+
+<body>
+  <div class="marquee-container">
+    <div class="marquee-wrapper">
+      <div class="marquee-content">
+        {% for block in section.blocks %}
+          <div class="marquee-image-box">
+            <a href="{{ block.settings.link }}">
+              <img
+                src="{{ block.settings.image | img_url: 'master' }}"
+                alt="{{ block.settings.image_alt | default: 'Logo' }}"
+              >
+            </a>
+          </div>
+        {% endfor %}
+      </div>
+
+      <!-- Duplicate for seamless effect -->
+      <div class="marquee-content">
+        {% for block in section.blocks %}
+          <div class="marquee-image-box">
+            <a href="{{ block.settings.link }}">
+              <img
+                src="{{ block.settings.image | img_url: 'master' }}"
+                alt="{{ block.settings.image_alt | default: 'Logo' }}"
+              >
+            </a>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</body>
+
+{% schema %}
+{
+  "name": "custom-marquee-section",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "logo",
+      "name": "Logo",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Logo Image"
+        },
+        {
+          "type": "text",
+          "id": "image_alt",
+          "label": "Image Alt Text",
+          "default": "Logo"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link URL"
+        }
+      ],
+      "limit": 10
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom Marquee Section",
+      "category": "Design",
+      "settings": {}
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,206 @@
+<style>
+    .container {
+        width: 100%;
+        max-width: 1400px;
+        padding: 0px 15px;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+
+    .inner-main-product-slider button.slick-arrow {
+        background-color: #fff;
+        padding: 0;
+        border: 0;
+        cursor: pointer;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        font-size: 0;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
+    }
+
+    .inner-main-product-slider button.slick-prev {
+        background-image: url(https://cdn.shopify.com/s/files/1/0687/2029/6193/files/Screenshot_1.png?v=1740420806);
+        right: 60px;
+        top: -50px;
+        left: auto;
+    }
+
+    .inner-main-product-slider button.slick-next {
+        background-image: url(https://cdn.shopify.com/s/files/1/0687/2029/6193/files/Screenshot_2.png?v=1740420806);
+        top: -50px;
+        right: 13px;
+    }
+
+  .okta-product-slider-sec {
+      padding: 20px 0;
+      padding-bottom: 0;
+  }
+
+    .okta-slider-image-box img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        /* border-radius: 7px; */
+    }
+  /* .okta-slider-image-box {
+      box-shadow: rgb(77 141 121 / 40%) 0px 1px 4px;
+      border-radius: 7px;
+  } */
+    .inner-main-product-slider .slick-slide {
+        margin-right: 17px;
+        margin-left: 17px;
+    }
+    .inner-main-product-slider .slick-list.draggable {
+      padding-top: 10px;
+  }
+
+  .okta-slider-txt-box h3 {
+      text-transform: capitalize;
+      font-weight: 600;
+      line-height: normal;
+      font-size: 20px;
+      padding-bottom: 20px;
+      margin: 0;
+  }
+    .inner-main-product-slider a {
+      text-decoration: none;
+  }
+
+    .okta-slider-txt-box span {
+        font-size: 20px;
+        color: #7c7777;
+    }
+
+    .okta-slider-txt-box {
+        padding-top: 25px;
+    }
+    .inner-main-product-slider button.slick-arrow::before {
+      display: none;
+  }
+
+      @media screen and (max-width: 1199px) {
+        .skin-care-sec .row {
+      flex-wrap: wrap;
+  }
+      }
+
+    @media screen and (max-width: 767px) {
+        .okta-slider-txt-box {
+            text-align: center;
+        }
+
+        .okta-product-slider-sec {
+            padding: 0px 0;
+            padding-top: 20px;
+        }
+    }
+</style>
+<div class="okta-product-slider-sec">
+  <div class="container">
+    <h2 class="title inline-richtext {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+      {{ section.settings.title }}
+    </h2>
+    <div class="inner-main-product-slider">
+      {% if section.settings.selected_collection != blank %}
+        {% assign collection = collections[section.settings.selected_collection] %}
+
+        {% if collection.products.size > 0 %}
+          {% for product in collection.products %}
+            <a href="{{ product.url }}">
+              <div class="okta-slider-box">
+                <div class="okta-slider-image-box">
+                  <img src="{{ product.featured_image | img_url: 'master' }}" alt="{{ product.title }}">
+                </div>
+                <div class="okta-slider-txt-box">
+                  <h3>{{ product.title }}</h3>
+                  <span>${{ product.price | money_with_currency }}</span>
+                </div>
+              </div>
+            </a>
+          {% endfor %}
+        {% else %}
+          <p>No products available in this collection.</p>
+        {% endif %}
+      {% else %}
+        <p>Please select a collection in the theme settings.</p>
+      {% endif %}
+    </div>
+  </div>
+</div>
+<script>
+  $(document).ready(function () {
+      $('.inner-main-product-slider').slick({
+          autoplay: false,
+          autoplaySpeed: 3000,
+          dots: false,
+          arrows: true,
+          infinite: true,
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          responsive: [
+              {
+                  breakpoint: 768,
+                  settings: {
+                      slidesToShow: 3,
+                  }
+              },
+              {
+                  breakpoint: 599,
+                  settings: {
+                      slidesToShow: 1,
+                  }
+              }
+          ]
+      });
+  });
+</script>
+
+{% schema %}
+{
+  "name": "New Featured Collection",
+  "settings": [
+        {
+      "type": "inline_richtext",
+      "id": "title",
+      "default": "Featured collection",
+      "label": "t:sections.featured-collection.settings.title.label"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        {
+          "value": "h2",
+          "label": "t:sections.all.heading_size.options__1.label"
+        },
+        {
+          "value": "h1",
+          "label": "t:sections.all.heading_size.options__2.label"
+        },
+        {
+          "value": "h0",
+          "label": "t:sections.all.heading_size.options__3.label"
+        }
+      ],
+      "default": "h1",
+      "label": "t:sections.all.heading_size.label"
+    },
+    {
+      "type": "collection",
+      "label": "Select Collection",
+      "id": "selected_collection"
+    }
+  ],
+  "presets": [
+    {
+      "name": "New Featured Collection"
+    }
+  ]
+}
+{% endschema %}
