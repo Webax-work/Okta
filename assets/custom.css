@@ -156,6 +156,26 @@ ul.main-featured-sec .card__inner.ratio a {
     padding: 0 15px;
 }
 /****Responsive-media-query***/
+
+
+@media screen and (max-width: 1024px) {
+  .footer__blocks-wrapper .footer-block__details-content p {
+    letter-spacing: normal;
+    line-height: 25px;
+    font-size: 14px;
+}
+
+.footer__blocks-wrapper ul.footer-block__details-content li a {
+    padding-bottom: 0
+}
+
+.newsletter__subheading p {
+    letter-spacing: normal;
+    line-height: 25px;
+}
+}
+
+
 @media only screen and (min-width: 749px) {
 /* .card-wrapper.product-card-wrapper {
     height: 500px;
