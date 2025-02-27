@@ -152,6 +152,9 @@ ul.main-featured-sec .card__inner.ratio a {
 .newsletter-form__field-wrapper {
     max-width: 280px !important;
 }
+.footer .footer__content-top {
+    padding: 0 15px;
+}
 /****Responsive-media-query***/
 @media only screen and (min-width: 749px) {
 /* .card-wrapper.product-card-wrapper {
