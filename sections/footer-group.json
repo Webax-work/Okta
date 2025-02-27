@@ -84,6 +84,10 @@
     "footer": {
       "type": "footer",
       "blocks": {
+        "newsletter_UGzxVG": {
+          "type": "newsletter",
+          "settings": {}
+        },
         "text_3ed6Yn": {
           "type": "text",
           "settings": {
@@ -115,6 +119,7 @@
         }
       },
       "block_order": [
+        "newsletter_UGzxVG",
         "text_3ed6Yn",
         "link_list_Ekdk88",
         "link_list_FGpg9c",
