@@ -37,6 +37,7 @@
         "paragraph_LHhyjK",
         "email_form_Xxbgri"
       ],
+      "disabled": true,
       "settings": {
         "color_scheme": "scheme-3",
         "full_width": true,
@@ -86,7 +87,11 @@
       "blocks": {
         "newsletter_UGzxVG": {
           "type": "newsletter",
-          "settings": {}
+          "settings": {
+            "newsletter_enable": true,
+            "newsletter_heading": "Subscribe to our emails",
+            "text": "<p>Be the first to know about new collections and exclusive offers.</p>"
+          }
         },
         "text_3ed6Yn": {
           "type": "text",
@@ -127,8 +132,6 @@
       ],
       "settings": {
         "color_scheme": "scheme-2",
-        "newsletter_enable": true,
-        "newsletter_heading": "Subscribe to our emails",
         "enable_follow_on_shop": true,
         "show_social": true,
         "enable_country_selector": false,
