@@ -88,7 +88,7 @@
           "type": "text",
           "settings": {
             "heading": "CONTACT DETAILS",
-            "subtext": "<p>P.O Box 5570,Dubai,UAE<br/><a href=\"mailto:connect@discoverokta.com\" title=\"Email\">connect@discoverokta.com</a></p>"
+            "subtext": "<p>Address:  Oilfields Supply Centre  Building. W3 AlQuoz 1  Dubai, United Arab Emirates <br/>Phone:    <a href=\"tel:+97148874522\" title=\"Phone\">+971 4 887 4522</a> <br/>Email:     <a href=\"mailto:connect@discoverokta.com\" title=\"Email\">connect@discoverokta.com</a></p>"
           }
         },
         "link_list_Ekdk88": {
@@ -107,6 +107,7 @@
         },
         "image_HN9Q4b": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image_width": 225,
             "alignment": "center"
@@ -121,7 +122,7 @@
       ],
       "settings": {
         "color_scheme": "scheme-2",
-        "newsletter_enable": false,
+        "newsletter_enable": true,
         "newsletter_heading": "Subscribe to our emails",
         "enable_follow_on_shop": true,
         "show_social": true,
