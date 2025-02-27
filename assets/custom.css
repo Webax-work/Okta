@@ -261,6 +261,12 @@ ul.main-featured-sec button.slick-arrow {
 
 @media screen and (max-width: 767px) {
 
+  .newsletter__subheading p {
+    text-align: left;
+}
+.footer-block__newsletter h2.footer-block__heading {
+    text-align: left;
+}
 .footer__blocks-wrapper .footer-block {
     margin-top: 25px;
 }
@@ -308,7 +314,9 @@ ul.main-featured-sec button.slick-arrow {
 
 @media only screen and (max-width: 480px) {
 
-
+.newsletter-form__field-wrapper {
+    max-width: 100% !important;
+}
 .custom__featured_coll ul.featured_slider .quick-add__submit {
     width: 75%;
     max-width: 75%;
