@@ -280,6 +280,7 @@ ul.main-featured-sec button.slick-arrow {
 }
 .footer__blocks-wrapper h2.footer-block__heading {
     margin-bottom: 10px;
+  padding-bottom: 5ox;
 }
 .footer__blocks-wrapper .footer-block.menu-footer-3 {
     width: 100% !important;
