@@ -1,11 +1,6 @@
-{%- assign product_results = search.results | where: 'object_type', 'product' -%}
-{%- assign product_count = product_results | size -%}
-
-{%- liquid
-  assign sort_by = search.sort_by | default: search.default_sort_by
-  assign terms = search.terms | escape
-  assign search_url = '?q=' | append: terms | append: '&options%5Bprefix%5D=last&sort_by=' | append: sort_by
--%}
+{%- assign sort_by = search.sort_by | default: search.default_sort_by -%}
+{%- assign terms = search.terms | escape -%}
+{%- assign search_url = '?q=' | append: terms | append: '&options%5Bprefix%5D=last&sort_by=' | append: sort_by -%}
 
 {%- style -%}
   .section-{{ section.id }}-padding {
@@ -21,7 +16,7 @@
   }
 {%- endstyle -%}
 
-{% paginate product_results by 24 %}
+{% paginate search.results by 24 %}
   <div class="template-search{% unless search.performed and search.results_count > 0 %} template-search--empty{% endunless %} section-{{ section.id }}-padding">
     <div class="template-search__header page-width{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
       <h1 class="h2 center">
@@ -55,12 +50,13 @@
         </main-search>
       </div>
     </div>
+
     <div class="product-grid-container" id="ProductGridContainer">
       {% if search.performed %}
         <div class="filter-tags">
           <h3>Filter by Tags</h3>
           <ul class="tag-filters">
-            {% assign all_tags = product_results | map: 'tags' | join: ',' | split: ',' | uniq %}
+            {% assign all_tags = search.results | map: 'tags' | join: ',' | split: ',' | uniq %}
             {% for tag in all_tags %}
               <li>
                 <a href="{{ search_url | append: '&tag=' | append: tag | url_encode }}" class="tag-link">
@@ -77,7 +73,12 @@
             class="grid product-grid grid--{{ section.settings.columns_mobile }}-col-tablet-down grid--{{ section.settings.columns_desktop }}-col-desktop"
             role="list"
           >
-            {% for item in product_results %}
+            {% assign filtered_products = search.results %}
+            {% if search.query_param.tag %}
+              {% assign filtered_products = filtered_products | where: 'tags', search.query_param.tag %}
+            {% endif %}
+
+            {% for item in filtered_products %}
               {%- assign lazy_load = false %}
               {%- if forloop.index > 2 -%}
                 {%- assign lazy_load = true -%}
