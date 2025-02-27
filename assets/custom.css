@@ -173,6 +173,10 @@ ul.main-featured-sec .card__inner.ratio a {
     letter-spacing: normal;
     line-height: 25px;
 }
+.skin-care-same-col svg {
+    width: 50px;
+    height: 50px;
+}
 }
 
 
