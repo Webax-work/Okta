@@ -116,7 +116,9 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
   padding-left: 3rem;
   padding-right: 3rem;
 }
-
+.footer__newsletter {
+    display: block;
+}
 @media screen and (min-width: 750px) {
   .page-width {
     padding: 0 5rem;
