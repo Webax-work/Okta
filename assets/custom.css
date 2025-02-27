@@ -123,7 +123,11 @@ ul.main-featured-sec .card__inner.ratio a {
 .rich-text a.button {
     transition: 0.5s;
 }
-
+.footer__blocks-wrapper .footer-block .footer__newsletter {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: left;
+}
 /****Responsive-media-query***/
 @media only screen and (min-width: 749px) {
 /* .card-wrapper.product-card-wrapper {
