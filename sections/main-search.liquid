@@ -274,13 +274,15 @@
                     {%- if forloop.index > 2 -%}
                       {%- assign lazy_load = true -%}
                     {%- endif -%}
-                    {% assign title_downcase = item.tag | downcase %}
                     {% assign search_terms_downcase = search.terms | downcase %}
                     <li
                       class="
-                        grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %} {% if title_downcase contains search_terms_downcase %}
-                          contains__
-                        {% endif %}
+                                                grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %} {% for tag in item.tags %}
+                          {% assign tag_downcase = tag | downcase %}
+                          {% if tag_downcase contains search_terms_downcase %}
+                            contains__
+                          {% endif %}
+                        {% endfor %}
                       "
                       {% if settings.animations_reveal_on_scroll %}
                         data-cascade
