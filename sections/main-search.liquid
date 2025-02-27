@@ -274,14 +274,9 @@
                     {%- if forloop.index > 2 -%}
                       {%- assign lazy_load = true -%}
                     {%- endif -%}
-                    {% assign description_downcase = item.description | downcase %}
-                    {% assign search_terms_downcase = search.terms | downcase %}
+
                     <li
-                      class="
-                        grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %} {% if description_downcase contains search_terms_downcase %}
-                          contains__
-                        {% endif %}
-                      "
+                      class="grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %} {% unless item.description contains search.terms %}contains__{% endunless %}"
                       {% if settings.animations_reveal_on_scroll %}
                         data-cascade
                       {% endif %}
