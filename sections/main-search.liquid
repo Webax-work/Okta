@@ -274,7 +274,7 @@
                     {%- if forloop.index > 2 -%}
                       {%- assign lazy_load = true -%}
                     {%- endif -%}
-                    {% assign title_downcase = item.title | downcase %}
+                    {% assign title_downcase = item.tag | downcase %}
                     {% assign search_terms_downcase = search.terms | downcase %}
                     <li
                       class="
