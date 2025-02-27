@@ -45,19 +45,5 @@ class MainSearch extends SearchForm {
     });
   }
 }
-document.addEventListener("DOMContentLoaded", function () {
-  const searchTerm = "{{ search.terms }}".toLowerCase();
-  const productList = document.querySelectorAll(".product-item"); // Modify this selector based on your product list structure
-
-  productList.forEach((product) => {
-    const productDescription = product
-      .querySelector(".product-description")
-      .textContent.toLowerCase();
-
-    if (productDescription.includes(searchTerm)) {
-      product.style.display = "none"; // Hide the product if description matches the search term
-    }
-  });
-});
 
 customElements.define("main-search", MainSearch);
