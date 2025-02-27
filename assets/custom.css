@@ -260,6 +260,16 @@ ul.main-featured-sec button.slick-arrow {
 
 @media screen and (max-width: 767px) {
 
+.footer__blocks-wrapper .footer-block {
+    width: 100% !important;
+}
+.footer__blocks-wrapper .footer-block.menu-footer-3 {
+    width: 100% !important;
+}
+
+.footer__blocks-wrapper .footer-block.menu-footer-4 {
+    width: 100% !important;
+}
   .buckscc-select-styled {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px !important;
 }
