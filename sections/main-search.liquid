@@ -276,7 +276,7 @@
                     {%- endif -%}
 
                     <li
-                      class="grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %} {% unless item.title contains search.terms %}contains__{% endunless %}"
+                      class="grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %} {% if item.title contains search.terms %}contains__{% endif %}"
                       {% if settings.animations_reveal_on_scroll %}
                         data-cascade
                       {% endif %}
