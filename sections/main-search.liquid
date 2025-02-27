@@ -304,7 +304,21 @@
 {% if section.settings.image_shape == 'arch' %}
   {% render 'mask-arch' %}
 {%- endif -%}
+<script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const searchTerm = '{{ search.terms }}'.toLowerCase(); // Get the search term from the Liquid object
+      const productItems = document.querySelectorAll('.product-item'); // Adjust selector for your theme
 
+      productItems.forEach(function(item) {
+        const description = item.querySelector('.product-description'); // Adjust selector for description
+        if (description && description.textContent.toLowerCase().includes(searchTerm)) {
+          item.style.display = 'none'; // Hide products with description containing the search term
+        }
+      });
+    });
+  </script>
+</script>
 {% schema %}
 {
   "name": "t:sections.main-search.name",
