@@ -128,6 +128,30 @@ ul.main-featured-sec .card__inner.ratio a {
     flex-direction: row;
     justify-content: left;
 }
+.footer__blocks-wrapper .footer-block {
+    width: 35% !important;
+    flex: unset;
+}
+.footer__blocks-wrapper .footer-block.menu-footer-3 {
+    width: 15% !important;
+}
+
+.footer__blocks-wrapper .footer-block.menu-footer-4 {
+    width: 15% !important;
+}
+
+.footer .footer__blocks-wrapper {
+    flex-wrap: nowrap;
+}
+
+.footer-block__newsletter .newsletter__subheading {
+    margin-bottom: 20px;
+    display: block;
+}
+
+.newsletter-form__field-wrapper {
+    max-width: 280px !important;
+}
 /****Responsive-media-query***/
 @media only screen and (min-width: 749px) {
 /* .card-wrapper.product-card-wrapper {
