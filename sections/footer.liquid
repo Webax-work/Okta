@@ -317,11 +317,11 @@
                         data-cascade
                       {% endif %}
                     >
-                      {%- if section.settings.newsletter_enable -%}
+                      {%- if block.settings.newsletter_enable -%}
                         <div class="footer-block__newsletter">
-                          {%- if section.settings.newsletter_heading != blank -%}
+                          {%- if block.settings.newsletter_heading != blank -%}
                             <h2 class="footer-block__heading inline-richtext">
-                              {{ section.settings.newsletter_heading }}
+                              {{ block.settings.newsletter_heading }}
                             </h2>
                           {%- endif -%}
                           {%- form 'customer', id: 'ContactFooter', class: 'footer__newsletter newsletter-form' -%}
