@@ -130,7 +130,6 @@ ul.main-featured-sec .card__inner.ratio a {
 }
 .footer__blocks-wrapper .footer-block {
     width: 35% !important;
-    flex: unset;
 }
 .footer__blocks-wrapper .footer-block.menu-footer-3 {
     width: 15% !important;
@@ -261,6 +260,19 @@ ul.main-featured-sec button.slick-arrow {
 
 @media screen and (max-width: 767px) {
 
+.footer__blocks-wrapper h2.footer-block__heading {
+    margin-bottom: 0;
+}
+.footer__blocks-wrapper .footer-block {
+    width: 100% !important;
+}
+.footer__blocks-wrapper .footer-block.menu-footer-3 {
+    width: 100% !important;
+}
+
+.footer__blocks-wrapper .footer-block.menu-footer-4 {
+    width: 100% !important;
+}
   .buckscc-select-styled {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px !important;
 }
