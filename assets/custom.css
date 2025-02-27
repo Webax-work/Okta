@@ -272,7 +272,7 @@ ul.main-featured-sec button.slick-arrow {
 }
 .footer__blocks-wrapper .footer-block {
     margin-bottom: 0 !important;
-    margin-top: 30px;
+    margin-top: 0px !important;
    width: 100% !important;
 }
 .footer__blocks-wrapper h2.footer-block__heading {
