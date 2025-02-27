@@ -89,8 +89,8 @@
           "type": "newsletter",
           "settings": {
             "newsletter_enable": true,
-            "newsletter_heading": "Subscribe to our emails",
-            "text": "<p>Be the first to know about new collections and exclusive offers.</p>"
+            "newsletter_heading": "JOIN US",
+            "text": "<p>Sign-up to receive 10% off on your first order.</p>"
           }
         },
         "text_3ed6Yn": {
