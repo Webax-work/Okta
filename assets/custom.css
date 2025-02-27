@@ -31,7 +31,7 @@ form#FacetFiltersForm span.field-currency, form#FacetFiltersForm h2#verticalTitl
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 30px;
+    gap: 15px;
     /* flex-wrap: wrap; */
 }
 .skin-care-same-col svg {
