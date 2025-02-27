@@ -323,6 +323,16 @@
                             <h2 class="footer-block__heading inline-richtext">
                               {{ block.settings.newsletter_heading }}
                             </h2>
+                            <div
+                              class="newsletter__subheading rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+                              {{ block.shopify_attributes }}
+                              {% if settings.animations_reveal_on_scroll %}
+                                data-cascade
+                                style="--animation-order: {{ forloop.index }};"
+                              {% endif %}
+                            >
+                              {{ block.settings.text }}
+                            </div>
                           {%- endif -%}
                           {%- form 'customer', id: 'ContactFooter', class: 'footer__newsletter newsletter-form' -%}
                             <input type="hidden" name="contact[tags]" value="newsletter">
@@ -565,7 +575,13 @@
       "id": "newsletter_heading",
       "default": "Subscribe to our emails",
       "label": "t:sections.footer.settings.newsletter_heading.label"
-    }
+    },
+                {
+          "type": "richtext",
+          "id": "text",
+          "default": "<p>Be the first to know about new collections and exclusive offers.</p>",
+          "label": "t:sections.newsletter.blocks.paragraph.settings.paragraph.label"
+        }
       ]
     },
     {
