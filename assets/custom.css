@@ -261,6 +261,9 @@ ul.main-featured-sec button.slick-arrow {
 
 @media screen and (max-width: 767px) {
 
+.footer__blocks-wrapper ul.footer-block__details-content li a {
+    padding-top: 5px;
+}
   .newsletter__subheading p {
     text-align: left;
 }
