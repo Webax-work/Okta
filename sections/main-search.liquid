@@ -277,11 +277,11 @@
                     {% assign search_terms_downcase = search.terms | downcase %}
                     <li
                       class="
-                                                grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %} {% for tag in item.tags %}
+                        grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %} {% for tag in item.tags %}
                           {% assign tag_downcase = tag | downcase %}
-                          {% if tag_downcase contains search_terms_downcase %}
+                          {% unless tag_downcase contains search_terms_downcase %}
                             contains__
-                          {% endif %}
+                          {% endunless %}
                         {% endfor %}
                       "
                       {% if settings.animations_reveal_on_scroll %}
