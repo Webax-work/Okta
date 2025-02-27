@@ -261,6 +261,13 @@ ul.main-featured-sec button.slick-arrow {
 
 @media screen and (max-width: 767px) {
 
+.footer__blocks-wrapper .footer-block {
+    margin-bottom: 0 !important;
+}
+
+.footer__blocks-wrapper .footer-block {
+    margin-top: 30px;
+}
 .footer__blocks-wrapper h2.footer-block__heading {
     margin-bottom: 0;
 }
