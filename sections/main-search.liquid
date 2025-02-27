@@ -279,9 +279,11 @@
                       class="
                         grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %} {% for tag in item.tags %}
                           {% assign tag_downcase = tag | downcase %}
-                          {% unless tag_downcase contains search_terms_downcase %}
-                            contains__
-                          {% endunless %}
+                          {% if tag_downcase contains search_terms_downcase %}
+                            d-block-search
+                            {% else %}
+                            d-none-search
+                          {% endif %}
                         {% endfor %}
                       "
                       {% if settings.animations_reveal_on_scroll %}
