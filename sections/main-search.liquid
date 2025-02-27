@@ -268,7 +268,7 @@
                 class="grid product-grid  grid--{{ section.settings.columns_mobile }}-col-tablet-down grid--{{ section.settings.columns_desktop }}-col-desktop"
                 role="list"
               >
-                {% for product in filtered_results %}
+                {% for product in search.results %}
                   {% unless product.description contains search.terms %}
                     <li
                       class="grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
