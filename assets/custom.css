@@ -155,6 +155,21 @@ ul.main-featured-sec .card__inner.ratio a {
 .footer .footer__content-top {
     padding: 0 15px;
 }
+.footer-block__newsletter {
+    background: #fffef2 !important;
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.footer-block__newsletter p {
+    color: #000;
+    letter-spacing: normal;
+}
+
+.footer-block__newsletter h2 {
+    color: #000;
+}
 /****Responsive-media-query***/
 
 
