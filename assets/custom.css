@@ -278,6 +278,7 @@ ul.main-featured-sec button.slick-arrow {
 
 .skin-care-sec {
     margin-bottom: 30px;
+    width: 100%; 
 }
 .footer__blocks-wrapper ul.footer-block__details-content li a {
     padding-top: 5px;
