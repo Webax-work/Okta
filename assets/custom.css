@@ -331,8 +331,8 @@ ul.main-featured-sec button.slick-arrow {
 @media only screen and (max-width: 599px) {
 
 .header {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
     grid-template-columns: auto auto auto;
 }
   .main-blog .blog-articles  img {
