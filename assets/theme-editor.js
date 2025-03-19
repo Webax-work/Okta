@@ -45,3 +45,32 @@ document.addEventListener('shopify:section:deselect', () => hideProductModal());
 document.addEventListener('shopify:inspector:activate', () => hideProductModal());
 
 document.addEventListener('shopify:inspector:deactivate', () => hideProductModal());
+
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll(".card__media").forEach(function (mediaDiv) {
+    const productCard = mediaDiv.closest(".product-card-wrapper");
+    if (!productCard) return;
+
+    const productUrl = productCard.querySelector(".card__heading a")?.href;
+    if (!productUrl) return;
+
+    // Ensure the image wrapper isn't already wrapped in a link
+    if (!mediaDiv.querySelector("a")) {
+      const imgWrapper = mediaDiv.querySelector(".media");
+      if (imgWrapper) {
+        const linkElement = document.createElement("a");
+        linkElement.href = productUrl;
+        linkElement.style.display = "block"; // Ensure full-size clickable area
+        linkElement.style.width = "100%";
+        linkElement.style.height = "100%";
+
+        // Move all children of imgWrapper into the new <a> tag
+        while (imgWrapper.firstChild) {
+          linkElement.appendChild(imgWrapper.firstChild);
+        }
+
+        imgWrapper.appendChild(linkElement);
+      }
+    }
+  });
+});
