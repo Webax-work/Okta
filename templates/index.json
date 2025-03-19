@@ -62,6 +62,50 @@
         "show_view_all": true
       }
     },
+    "rich_text_xjDBfD": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_xUPHkY": {
+          "type": "heading",
+          "settings": {
+            "heading": "Clean Beauty Products",
+            "heading_size": "h1"
+          }
+        },
+        "text_QDTYyM": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
+          }
+        },
+        "button_rNhijL": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_xUPHkY",
+        "text_QDTYyM",
+        "button_rNhijL"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "featured_collection_7ze3Nj": {
       "type": "featured-collection",
       "settings": {
@@ -86,7 +130,7 @@
         "enable_quick_add": true,
         "columns_mobile": "2",
         "swipe_on_mobile": true,
-        "padding_top": 84,
+        "padding_top": 0,
         "padding_bottom": 36
       }
     },
@@ -383,6 +427,7 @@
   "order": [
     "image_banner_new_TMezQe",
     "featured_collection_slider_fm6hVh",
+    "rich_text_xjDBfD",
     "featured_collection_7ze3Nj",
     "featured_collection_ek7kAy",
     "image_banner_VANJwq",
