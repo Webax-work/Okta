@@ -58,7 +58,7 @@
               {% comment %}theme-check-disable ImgLazyLoading{% endcomment %}
               <img
                 src="{{ card_product.featured_media | img_url: 'master' }}"
-                alt="{{ card_product.featured_media.alt | escape }}"
+                alt="{{ card_product.title | escape }}"
                 class="motion-reduce"
                 {% unless lazy_load == false %}
                   loading="lazy"
