@@ -63,6 +63,8 @@
                 {% unless lazy_load == false %}
                   loading="lazy"
                 {% endunless %}
+                width="{{ card_product.media[1].width }}"
+                  height="{{ card_product.media[1].height }}"
               >
               {% comment %}theme-check-enable ImgLazyLoading{% endcomment %}
 
