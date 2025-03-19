@@ -46,3 +46,12 @@ document.addEventListener('shopify:inspector:activate', () => hideProductModal()
 
 document.addEventListener('shopify:inspector:deactivate', () => hideProductModal());
 
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll(".card__media a").forEach((el) => {
+    el.style.pointerEvents = "auto";
+    el.addEventListener("click", function (e) {
+      e.stopPropagation();
+      window.location.href = this.href;
+    });
+  });
+});
