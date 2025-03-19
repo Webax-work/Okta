@@ -25,28 +25,37 @@
 
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-        document.querySelectorAll(".card-wrapper.product-card-wrapper").forEach(function (productCard) {
-          const productLink = productCard.querySelector(".card__heading a")?.href;
-          const mediaDiv = productCard.querySelector(".card__media .media");
-      
-          if (productLink && mediaDiv && !mediaDiv.closest("a")) {
-            // Create an anchor tag
-            const linkElement = document.createElement("a");
-            linkElement.href = productLink;
-            linkElement.style.display = "block"; // Ensure full-size clickable area
-            linkElement.style.width = "100%";
-            linkElement.style.height = "100%";
-      
-            // Move all children of mediaDiv inside the anchor tag
-            while (mediaDiv.firstChild) {
-              linkElement.appendChild(mediaDiv.firstChild);
-            }
-      
-            // Append the wrapped content back inside mediaDiv
-            mediaDiv.appendChild(linkElement);
-          }
-        });
-      });
+  document.querySelectorAll(".card-wrapper.product-card-wrapper").forEach(function (productCard) {
+    const productLink = productCard.querySelector(".card__heading a")?.href;
+    const mediaDiv = productCard.querySelector(".card__media .media");
+
+    if (productLink && mediaDiv) {
+      // Remove any existing wrapping <a> to prevent nesting issues
+      const existingAnchor = mediaDiv.querySelector("a");
+      if (existingAnchor) {
+        while (existingAnchor.firstChild) {
+          mediaDiv.appendChild(existingAnchor.firstChild);
+        }
+        existingAnchor.remove();
+      }
+
+      // Create a new anchor tag
+      const linkElement = document.createElement("a");
+      linkElement.href = productLink;
+      linkElement.style.display = "block"; // Ensure full-size clickable area
+      linkElement.style.width = "100%";
+      linkElement.style.height = "100%";
+
+      // Move all children of mediaDiv inside the anchor tag
+      while (mediaDiv.firstChild) {
+        linkElement.appendChild(mediaDiv.firstChild);
+      }
+
+      // Append the wrapped content back inside mediaDiv
+      mediaDiv.appendChild(linkElement);
+    }
+  });
+});
     </script>
 
     <script>
