@@ -34,20 +34,12 @@
             "text": "Enjoy 10% off your first order",
             "link": ""
           }
-        },
-        "announcement_mN4t7E": {
-          "type": "announcement",
-          "settings": {
-            "text": "Mother's day sale 25% off at checkout",
-            "link": ""
-          }
         }
       },
       "block_order": [
         "announcement_grNqe3",
         "announcement-bar-0",
-        "announcement_nCXcpj",
-        "announcement_mN4t7E"
+        "announcement_nCXcpj"
       ],
       "custom_css": [
         "p {font-family: \"Tenor Sans\", sans-serif; font-size: 14px;}",
