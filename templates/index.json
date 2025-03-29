@@ -15,15 +15,15 @@
         "heading_FDtF9i": {
           "type": "heading",
           "settings": {
-            "heading": "Encapsulating Clean Conscious Beauty & Wellness.",
+            "heading": "EID OFFER",
             "heading_size": "h1"
           }
         },
         "text_Y4t89R": {
           "type": "text",
           "settings": {
-            "text": " Your skin's fresh start.",
-            "text_style": "caption-with-letter-spacing"
+            "text": "Stock up on your favorites at 35% off - no code needed",
+            "text_style": "subtitle"
           }
         }
       },
@@ -32,19 +32,19 @@
         "text_Y4t89R"
       ],
       "settings": {
-        "image": "shopify://shop_images/Abel-VDAY-TheApartment-03.jpg",
-        "image_mb": "shopify://shop_images/Abel-VDAY-TheApartment-03.jpg",
+        "image": "shopify://shop_images/811239030733IndieLeeSoothingCleanser_125ml_29.jpg",
+        "image_mb": "shopify://shop_images/811239030733IndieLeeSoothingCleanser_125ml_29.jpg",
         "video": "https://cdn.shopify.com/videos/c/o/v/1e071c94ba07481ba4b5e5d653ef88e2.mp4",
         "video_autoplay": false,
         "video_loop": false,
         "video_muted": true,
-        "image_overlay_opacity": 0,
+        "image_overlay_opacity": 10,
         "image_height": "medium",
         "desktop_content_position": "bottom-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",
         "color_scheme": "scheme-3",
-        "image_behavior": "fixed",
+        "image_behavior": "none",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
         "show_text_below": false
