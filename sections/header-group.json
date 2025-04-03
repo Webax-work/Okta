@@ -14,13 +14,6 @@
     "announcement-bar": {
       "type": "announcement-bar",
       "blocks": {
-        "announcement_grNqe3": {
-          "type": "announcement",
-          "settings": {
-            "text": "Oio Lab exclusive: buy one, get one 50% Off",
-            "link": ""
-          }
-        },
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
@@ -34,20 +27,11 @@
             "text": "Enjoy 10% off your first order",
             "link": ""
           }
-        },
-        "announcement_7RYzUq": {
-          "type": "announcement",
-          "settings": {
-            "text": "Eid Sale - 35% Off, No Code Needed",
-            "link": ""
-          }
         }
       },
       "block_order": [
-        "announcement_grNqe3",
         "announcement-bar-0",
-        "announcement_nCXcpj",
-        "announcement_7RYzUq"
+        "announcement_nCXcpj"
       ],
       "custom_css": [
         "p {font-family: \"Tenor Sans\", sans-serif; font-size: 14px;}",
