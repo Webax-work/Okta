@@ -3158,6 +3158,97 @@
       "save_accessibility_label": "حفظ العنوان {{address}}",
       "section_title_accessibility_label": "إضافة عنوان",
       "update_success_notification": "تم تحديث العنوان"
+    },
+    "ui_components": {
+      "may": "يمكن",
+      "june": "يونيو",
+      "july": "يوليو",
+      "august": "أغسطس",
+      "september": "سبتمبر",
+      "october": "أكتوبر",
+      "november": "نوفمبر",
+      "december": "ديسمبر",
+      "monday": "الاثنين",
+      "tuesday": "يوم الثلاثاء",
+      "wednesday": "الأربعاء",
+      "thursday": "يوم الخميس",
+      "friday": "جمعة",
+      "saturday": "السبت",
+      "sunday": "الأحد",
+      "mondayAbbreviation": "شهر",
+      "tuesdayAbbreviation": "تو",
+      "wednesdayAbbreviation": "نحن",
+      "thursdayAbbreviation": "ذ",
+      "fridayAbbreviation": "فرنسي",
+      "saturdayAbbreviation": "سا",
+      "sundayAbbreviation": "سو",
+      "showNextMonth": "عرض الشهر القادم، {{month}} {{year}}",
+      "showPreviousMonth": "إظهار الشهر السابق، {{month}} {{year}}",
+      "rangeStart": "بداية النطاق",
+      "inRange": "في النطاق",
+      "rangeEnd": "نهاية النطاق",
+      "autocompleteOptionsAvailable": {
+        "one": "{{count}} عنصر متاح",
+        "other": "{{count}} عناصر متاحة"
+      },
+      "removeItem": "إزالة {{label}}",
+      "removeTag": "إزالة العلامة",
+      "month": {
+        "one": "شهر",
+        "other": "شهور"
+      },
+      "mapClusterTitle": {
+        "one": "مجموعة من {{number}} علامة",
+        "other": "مجموعة من {{number}} علامة"
+      },
+      "expandSheet": "يوسع",
+      "qrCode": "رمز الاستجابة السريعة",
+      "addFile": "إضافة ملف",
+      "dropzoneInvalidFileType": "نوع الملف غير مدعوم",
+      "dropzoneDraggedOver": "إسقاط الملف للتحميل"
+    },
+    "profile_preview_bar": {
+      "customize_button": "تخصيص",
+      "hide_bar": "إخفاء الشريط",
+      "navigate_to_admin": "انتقل إلى المسؤول",
+      "close_preview": "إغلاق المعاينة",
+      "previewing": "أنت تقوم بمعاينة:",
+      "saved_at": "تم الحفظ {{date}} في {{time}}",
+      "viewing": "أنت تشاهد:",
+      "not_available": "بيانات الملف الشخصي غير متوفرة",
+      "actions_button": "الإجراءات"
+    },
+    "active_inspector": {
+      "extension": {
+        "select": "حدد الامتداد المسمى {{extensionName}}",
+        "unselect": "قم بإلغاء تحديد الامتداد المسمى {{extensionName}}",
+        "move_down": "نقل الامتداد إلى الموضع التالي",
+        "move_up": "نقل الامتداد إلى الموضع السابق",
+        "remove": "إزالة الامتداد",
+        "move_down_tooltip": "انتقل إلى الموضع التالي",
+        "move_up_tooltip": "الانتقال إلى الموضع السابق",
+        "remove_tooltip": "يزيل"
+      }
+    },
+    "editor": {
+      "link_new_tab_confirmation": "لا يمكن فتح هذا الرابط داخل المحرر. سيتم فتحه في نافذة جديدة ( {{resolved_to_link}} ). انقر \"موافق\" للمتابعة."
+    },
+    "settings": {
+      "title": "إعدادات",
+      "loading_accessibility_message": "تحميل صفحة الإعدادات",
+      "log_out_everywhere": {
+        "title": "تسجيل الخروج في كل مكان",
+        "description": "إذا فقدت جهازًا أو كانت لديك مخاوف أمنية، فقم بتسجيل الخروج من كل مكان لضمان أمان حسابك.",
+        "button": "تسجيل الخروج في كل مكان",
+        "warning_message": "سيتم تسجيل خروجك على هذا الجهاز أيضًا."
+      }
+    },
+    "shop_ads": {
+      "title": "عروض حصرية من المتجر",
+      "subtitle": "متاح لفترة محدودة",
+      "button": "استكشف في المتجر",
+      "previous_button": "سابق",
+      "next_button": "التالي"
     }
   },
   "customer": {
@@ -3306,7 +3397,30 @@
     "search": {
       "search_for": "ابحث عن \" {{ terms }} \"",
       "suggestions": "اقتراحات",
-      "pages": "الصفحات"
+      "pages": "الصفحات",
+      "no_results": "لم يتم العثور على نتائج لـ \" {{ terms }} \". تحقق من التهجئة أو استخدم كلمة أو عبارة مختلفة.",
+      "page": "صفحة",
+      "results_pages_with_count": {
+        "one": "{{ count }} صفحة",
+        "other": "{{ count }} صفحات"
+      },
+      "results_suggestions_with_count": {
+        "one": "اقتراح {{ count }}",
+        "other": "{{ count }} اقتراحات"
+      },
+      "results_products_with_count": {
+        "one": "{{ count }} منتج",
+        "other": "{{ count }} منتجات"
+      },
+      "results_with_count": {
+        "one": "{{ count }} نتيجة",
+        "other": "{{ count }} نتائج"
+      },
+      "results_with_count_and_term": {
+        "one": "تم العثور على {{ count }} نتيجة لـ \" {{ terms }} \"",
+        "other": "تم العثور على {{ count }} نتيجة لـ \" {{ terms }} \""
+      },
+      "title": "نتائج البحث"
     },
     "cart": {
       "cart": "عربة التسوق"
@@ -3393,6 +3507,49 @@
       "remove_all_items_confirmation": "هل تريد إزالة جميع {{ quantity }} من سلة التسوق الخاصة بك؟",
       "remove_all": "إزالة الكل",
       "cancel": "يلغي"
+    },
+    "announcements": {
+      "previous_announcement": "الإعلان السابق",
+      "next_announcement": "الإعلان القادم",
+      "carousel": "دوارة",
+      "announcement": "إعلان",
+      "announcement_bar": "شريط الإعلانات"
+    },
+    "header": {
+      "announcement": "إعلان",
+      "menu": "قائمة طعام",
+      "cart_count": {
+        "one": "{{ count }} عنصر",
+        "other": "{{ count }} عناصر"
+      }
+    },
+    "cart": {
+      "title": "عربة التسوق الخاصة بك",
+      "caption": "عناصر عربة التسوق",
+      "remove_title": "إزالة {{ title }}",
+      "estimated_total": "المجموع التقديري",
+      "new_estimated_total": "إجمالي التقدير الجديد",
+      "note": "اطلب تعليمات خاصة",
+      "checkout": "الدفع",
+      "empty": "سلة التسوق الخاصة بك فارغة",
+      "cart_error": "حدث خطأ أثناء تحديث سلة التسوق. يُرجى المحاولة مرة أخرى.",
+      "cart_quantity_error_html": "يمكنك فقط إضافة {{ quantity }} من هذا العنصر إلى سلة التسوق الخاصة بك.",
+      "taxes_and_shipping_policy_at_checkout_html": "يتم احتساب الضرائب والخصومات <a href=\"&lt;span%20class='notranslate'&gt;{{%20link%20}}&lt;/span&gt;\">والشحن</a> عند الدفع",
+      "taxes_included_but_shipping_at_checkout": "الضريبة متضمنة والشحن والخصومات محسوبة عند الدفع",
+      "taxes_included_and_shipping_policy_html": "شامل الضريبة. <a href=\"&lt;span%20class='notranslate'&gt;{{%20link%20}}&lt;/span&gt;\">الشحن</a> والخصومات تُحسب عند الدفع.",
+      "taxes_and_shipping_at_checkout": "الضرائب والخصومات والشحن يتم حسابها عند الدفع",
+      "headings": {
+        "product": "منتج",
+        "price": "سعر",
+        "total": "المجموع",
+        "quantity": "كمية",
+        "image": "صورة المنتج"
+      },
+      "update": "تحديث",
+      "login": {
+        "title": "هل لديك حساب؟",
+        "paragraph_html": "<a href=\"&lt;span%20class='notranslate'&gt;{{%20link%20}}&lt;/span&gt;\" class=\"link underlined-link\">قم بتسجيل الدخول</a> لتتمكن من الخروج بشكل أسرع."
+      }
     }
   },
   "general": {
@@ -3489,7 +3646,120 @@
       "name": "اسم",
       "email": "بريد إلكتروني",
       "message": "تعليق",
-      "post": "نشر التعليق"
+      "post": "نشر التعليق",
+      "back_to_blog": "العودة إلى المدونة",
+      "share": "شارك هذه المقالة",
+      "success": "تم نشر تعليقك بنجاح! شكرًا لك!",
+      "success_moderated": "تم نشر تعليقك بنجاح. سننشره قريبًا، لأن مدونتنا تخضع لإشرافنا."
+    }
+  },
+  "onboarding": {
+    "product_title": "مثال على عنوان المنتج",
+    "collection_title": "اسم مجموعتك"
+  },
+  "products": {
+    "product": {
+      "add_to_cart": "أضف إلى السلة",
+      "choose_options": "اختر الخيارات",
+      "choose_product_options": "اختر الخيارات لـ {{ product_name }}",
+      "description": "وصف",
+      "inventory_in_stock": "في الأوراق المالية",
+      "inventory_in_stock_show_count": "{{ quantity }} في المخزون",
+      "inventory_low_stock": "انخفاض المخزون",
+      "inventory_low_stock_show_count": "المخزون منخفض: {{ quantity }} متبقية",
+      "inventory_out_of_stock": "إنتهى من المخزن",
+      "inventory_out_of_stock_continue_selling": "في الأوراق المالية",
+      "sku": "رمز المنتج",
+      "on_sale": "أُوكَازيُون",
+      "product_variants": "متغيرات المنتج",
+      "media": {
+        "gallery_viewer": "عارض المعرض",
+        "load_image": "تحميل الصورة {{ index }} في عرض المعرض",
+        "load_model": "تحميل نموذج ثلاثي الأبعاد {{ index }} في عرض المعرض",
+        "load_video": "تشغيل الفيديو {{ index }} في عرض المعرض",
+        "image_available": "الصورة {{ index }} متاحة الآن في عرض المعرض",
+        "open_media": "افتح الوسائط {{ index }} في النافذة المنبثقة",
+        "play_model": "تشغيل عارض ثلاثي الأبعاد",
+        "play_video": "تشغيل الفيديو"
+      },
+      "quantity": {
+        "label": "كمية",
+        "input_label": "الكمية لـ {{ product }}",
+        "increase": "زيادة الكمية لـ {{ product }}",
+        "decrease": "تقليل الكمية لـ {{ product }}",
+        "minimum_of": "الحد الأدنى من {{ quantity }}",
+        "maximum_of": "الحد الأقصى لـ {{ quantity }}",
+        "multiples_of": "زيادات {{ quantity }}",
+        "in_cart_html": "<span class=\"quantity-cart\">{{ quantity }}</span> في سلة التسوق",
+        "note": "عرض قواعد الكمية"
+      },
+      "volume_pricing": {
+        "title": "تسعير الحجم",
+        "note": "التسعير بالكميات المتاحة",
+        "minimum": "{{ quantity }} +",
+        "price_at_each": "بسعر {{ price }} /للوحدة"
+      },
+      "pickup_availability": {
+        "view_store_info": "عرض معلومات المتجر",
+        "check_other_stores": "التحقق من التوفر في المتاجر الأخرى",
+        "pick_up_available": "الاستلام متاح",
+        "pick_up_available_at_html": "الاستلام متاح في <span class=\"color-foreground\">{{ location_name }}</span>",
+        "pick_up_unavailable_at_html": "الاستلام غير متاح حاليًا في <span class=\"color-foreground\">{{ location_name }}</span>",
+        "unavailable": "لم نتمكن من تحميل توفر الاستلام",
+        "refresh": "ينعش"
+      },
+      "price": {
+        "from_price_html": "من {{ price }}",
+        "regular_price": "السعر العادي",
+        "sale_price": "سعر البيع",
+        "unit_price": "سعر الوحدة"
+      },
+      "share": "شارك هذا المنتج",
+      "sold_out": "نفذ",
+      "unavailable": "غير متاح",
+      "vendor": "بائع",
+      "value_unavailable": "{{ option_value }} - غير متوفر",
+      "variant_sold_out_or_unavailable": "تم بيع النسخة أو عدم توفرها",
+      "video_exit_message": "{{ title }} يفتح مقطع الفيديو على كامل الشاشة في نفس النافذة.",
+      "view_full_details": "عرض التفاصيل الكاملة",
+      "xr_button": "عرض في مساحتك",
+      "xr_button_label": "عرض في مساحتك، وتحميل العنصر في نافذة الواقع المعزز",
+      "include_taxes": "شامل ضريبة القيمة المضافة",
+      "shipping_policy_html": "يتم احتساب <a href=\"&lt;span%20class='notranslate'&gt;{{%20link%20}}&lt;/span&gt;\">الشحن</a> عند الخروج."
+    },
+    "modal": {
+      "label": "معرض الوسائط"
+    },
+    "facets": {
+      "filter_and_operator_subtitle": "تطابق الكل",
+      "apply": "يتقدم",
+      "clear": "واضح",
+      "clear_all": "إزالة الكل",
+      "from": "من",
+      "filter_and_sort": "التصفية والفرز",
+      "filter_by_label": "فلتر:",
+      "filter_button": "فلتر",
+      "filters_selected": {
+        "one": "تم اختيار {{ count }}",
+        "other": "تم اختيار {{ count }}"
+      },
+      "filter_selected_accessibility": "{{ type }} (تم تحديد {{ count }} مرشحًا)",
+      "show_more": "إظهار المزيد",
+      "show_less": "إظهار أقل",
+      "max_price": "أعلى سعر هو {{ price }}",
+      "product_count": {
+        "one": "{{ product_count }} من {{ count }} منتج",
+        "other": "{{ product_count }} من {{ count }} منتجًا"
+      },
+      "product_count_simple": {
+        "one": "{{ count }} منتج",
+        "other": "{{ count }} منتجات"
+      },
+      "reset": "إعادة ضبط",
+      "sort_button": "نوع",
+      "sort_by_label": "فرز حسب:",
+      "to": "ل",
+      "clear_filter": "إزالة الفلتر"
     }
   }
 }
