@@ -1807,7 +1807,22 @@
         "selection_continue_button": "يكمل،",
         "title": "ما هو الموقع الذي تشتريه؟",
         "clear_search": "مسح البحث",
-        "try_new_search": "حاول البحث الجديد"
+        "try_new_search": "حاول البحث الجديد",
+        "continue_to_store": "متابعة التخزين",
+        "description": "إذا كان لديك بالفعل عناصر في عربة التسوق الخاصة بك، فقد يؤثر تغيير المواقع على أسعار عربة التسوق وكمياتها.",
+        "list_accessibility_label": "قائمة المواقع",
+        "list_item_without_address_accessibility_label": "{{name}} : لا يوجد عنوان",
+        "list_loading_accessibility_message": "جاري تحميل قائمة المواقع",
+        "list_loading_address_accessibility_message": "عنوان التحميل لـ {{locationName}}",
+        "list_loading_finished_accessibility_message": "تم تحميل قائمة المواقع",
+        "loading_store_accessibility_message": "الذهاب إلى المتجر",
+        "no_location_title": "الطلبات الشخصية فقط",
+        "no_location_description": "لم يعد لديك إذن لطلبات {{company}} . لا يزال بإمكانك تقديم طلبات شخصية.",
+        "no_locations_found": "لم يتم العثور على أي مواقع",
+        "search": "البحث عن موقع",
+        "search_location_title": "حدد موقعا",
+        "selection_cancel_button": "يلغي",
+        "selection_confirmation_button": "اختر الموقع"
       },
       "addresses": {
         "add_billing_address_button": "إضافة عنوان الفاتورة",
@@ -1954,6 +1969,42 @@
         "modal_po_number_input_max_length_error": "تحتوي أرقام طلب الشراء على الحد الأقصى من {{maxLength}} حرف.",
         "save": "يحفظ",
         "title": "رقم الطلب {{poNumber}}"
+      },
+      "account_information": {
+        "company_card_name_label": "اسم الشركة",
+        "company_card_section_accessibility_label": "شركة"
+      },
+      "locations": {
+        "contact_email": "بريد إلكتروني",
+        "contact_list_title": "الناس",
+        "contact_name": "اسم",
+        "contact_permissions": "الأذونات",
+        "contact_phone_number": "رقم التليفون",
+        "location_picker_label": "اسم الموقع",
+        "location_picker_accessibility_label": "اسم الموقع: {{locationName}}",
+        "net_payment_terms_description": "{{name}} : المدفوعات المستحقة خلال {{numberOfDays}} يومًا",
+        "deposit_percentage": "إيداع {{percentage}}",
+        "own_role_contact_name": "أنت",
+        "pagination": {
+          "load_more": "تحميل المزيد",
+          "load_more_accessibility_label": "تحميل المزيد من المواقع"
+        },
+        "payment_details_title": "تفاصيل الدفع",
+        "payment_terms": "شروط الدفع",
+        "permissions_label": "أذوناتك",
+        "permissions_title": "الأذونات",
+        "section_title": "موقع",
+        "shipping_address_required": "أضف عنوان الشحن إلى هذا الموقع لبدء تقديم الطلبات.",
+        "staff_and_permissions_title": "الموظفين والأذونات",
+        "tax_details_title": "تفاصيل الضريبة",
+        "tax_id": "رقم التعريف الضريبي",
+        "tax_exemptions": "الإعفاءات الضريبية",
+        "multiple_tax_exemptions": "{{taxExemptionsCount}} المزيد",
+        "multiple_tax_exemptions_and": "و",
+        "tax_exemptions_modal_close": "يغلق",
+        "taxes_none": "لا أحد",
+        "tax_exemption_not_applicable": "غير متوفر",
+        "tax_exemptions_modal_button_accessibility_label": "عرض جميع الإعفاءات الضريبية"
       }
     },
     "account_information": {
@@ -2490,6 +2541,71 @@
           "gift_card": "بطاقة هدية"
         }
       }
+    },
+    "addresses": {
+      "add_button_text": "يضيف",
+      "add_button_accessibility_label": "إضافة عنوان",
+      "back_button": "خلف",
+      "back_button_accessibility_label": "العودة إلى عنوان التحرير {{address}}",
+      "add_address_banner": "أضف عناوين لاستخدامها عند الخروج",
+      "no_addresses_banner": "لم تتم إضافة أي عناوين",
+      "address_deleted_notification": "تم حذف العنوان",
+      "cancel_adding_address_accessibility_label": "إلغاء إضافة العنوان",
+      "cancel_deletion_button": "يلغي",
+      "cancel_deletion_button_accessibility_label": "إلغاء حذف {{address}}",
+      "default_address": {
+        "title": "العنوان الافتراضي",
+        "title_accessibility_label": "العنوان الافتراضي: {{address}}"
+      },
+      "delete_button": "يمسح",
+      "delete_button_accessibility_label": "حذف {{address}}",
+      "delete_confirmation_button": "حذف العنوان",
+      "delete_confirmation_button_accessibility_label": "حذف {{address}}",
+      "delete_confirmation_message": "هل تريد حذف العنوان؟ الطلبات الحالية لن تتأثر.",
+      "delete_confirmation_title": "حذف العنوان؟",
+      "delete_confirmation_description": "لا تتأثر الطلبات الحالية.",
+      "edit_button": "يحرر",
+      "edit_button_accessibility_label": "تعديل {{address}}",
+      "edit_section_accessibility_label": "تعديل {{address}}",
+      "edit_modal_title": {
+        "default": "تعديل العنوان",
+        "billing": "تعديل عنوان الفاتورة",
+        "shipping": "تعديل عنوان الشحن"
+      },
+      "loading_accessibility_message": "عنوان التحميل",
+      "loading_addresses_accessibility_message": "تحميل العناوين",
+      "loading_billing_accessibility_message": "تحميل عنوان الفاتورة",
+      "loading_finished_accessibility_message": "تم تحميل صفحة جديدة من العناوين",
+      "loading_shipping_accessibility_message": "جاري تحميل عنوان الشحن",
+      "pagination": {
+        "load_more": "تحميل المزيد",
+        "load_more_accessibility_label": "تحميل المزيد من العناوين"
+      },
+      "save_new_address_accessibility_label": "حفظ العنوان",
+      "title": "العناوين",
+      "billing_address_dropdown_placeholder": "عنوان الفاتورة"
+    },
+    "address_form": {
+      "attention": "انتباه",
+      "attention_company": "الشركة/الاهتمام",
+      "attention_help_text": "اسم الشخص أو القسم",
+      "auto_complete_close_accessibility_label": "إغلاق الاقتراحات",
+      "auto_complete_title": "اقتراحات",
+      "billing_address": "استخدم كعنوان إرسال الفواتير",
+      "cancel": "يلغي",
+      "cancel_accessibility_label": "إلغاء تحرير العنوان {{address}}",
+      "creation_success_notification": "تمت إضافة العنوان",
+      "default_address": "هذا هو عنواني الافتراضي",
+      "default_address_creation_success_notification": "تمت إضافة العنوان الافتراضي",
+      "default_address_update_success_notification": "تم تحديث العنوان الافتراضي",
+      "loading_add_form_accessibility_message": "تحميل نموذج عنوان جديد",
+      "loading_edit_form_accessibility_message": "تحميل نموذج تحرير العنوان",
+      "loading_form_accessibility_message": "نموذج عنوان التحميل",
+      "loading_finished_accessibility_message": "تم تحميل نموذج العنوان",
+      "save": "يحفظ",
+      "save_accessibility_label": "حفظ العنوان {{address}}",
+      "section_title_accessibility_label": "إضافة عنوان",
+      "update_success_notification": "تم تحديث العنوان"
     }
   },
   "customer": {
