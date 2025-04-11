@@ -15,14 +15,14 @@
         "heading_FDtF9i": {
           "type": "heading",
           "settings": {
-            "heading": "Spring Scents",
+            "heading": "The Spring Beauty Drop",
             "heading_size": "h1"
           }
         },
         "text_Y4t89R": {
           "type": "text",
           "settings": {
-            "text": "Discover the Art of Scent Layering with Abel.",
+            "text": "Shop the newest arrivals at O K T A",
             "text_style": "subtitle"
           }
         }
@@ -32,8 +32,8 @@
         "text_Y4t89R"
       ],
       "settings": {
-        "image": "shopify://shop_images/02-Cyan_Nori-Layering.jpg",
-        "image_mb": "shopify://shop_images/01b-Cyan_Nori-Layering.jpg",
+        "image": "shopify://shop_images/Oio_18.07.24_8757_KADR_02.jpg",
+        "image_mb": "shopify://shop_images/Oio_18.07.24_8757_KADR_02.jpg",
         "video": "https://cdn.shopify.com/videos/c/o/v/1e071c94ba07481ba4b5e5d653ef88e2.mp4",
         "video_autoplay": false,
         "video_loop": false,
@@ -68,7 +68,7 @@
         "h1 {text-align: center;}"
       ],
       "settings": {
-        "custom_liquid": "<h1>Clean Beauty Products</h1>",
+        "custom_liquid": "<h1>Clean Beauty</h1>",
         "color_scheme": "",
         "padding_top": 16,
         "padding_bottom": 16
@@ -156,8 +156,8 @@
         " {text-align: -webkit-center;}"
       ],
       "settings": {
-        "image": "shopify://shop_images/CORPUS_Conditioner_Selects_1x1_06.jpg",
-        "image_2": "shopify://shop_images/CORPUS_DeodorantStick_Selects_1x1_36.jpg",
+        "image": "shopify://shop_images/Oio_17.07.24_5746_KADR_01.jpg",
+        "image_2": "shopify://shop_images/Lifestyle_Natural-Deodorant_Corpus-Natural_abf277fa-6499-43e5-ae10-47074fd3220c.webp",
         "image_overlay_opacity": 0,
         "image_height": "large",
         "desktop_content_position": "bottom-center",
@@ -191,7 +191,7 @@
         "text_m7EDWj": {
           "type": "text",
           "settings": {
-            "text": "<p>We strive to provide our community with high-performing, non-toxic beauty and wellness that are scientifically tested to deliver measurable results. </p><p>NO SUSPECT INGREDIENTS</p><p>Our products meet the strictest clean beauty standards, banning more than 1,300 toxic ingredients. </p><p>No Parabens | No Mineral Oil | No Sulfate-based Detergents | No Synthetic Fragrance | No Petroleum-based Ingredients | No Phthalates | No Phenoxyethanol | No Formaldehyde</p><p></p><p><a href=\"https://www.discoverokta.com/pages/about\" target=\"_blank\" title=\"https://www.discoverokta.com/pages/about\">LEARN MORE</a></p>"
+            "text": "<p>Scientifically tested, high-performing, non-toxic formulas that deliver real results. We ban over 1,300 harmful ingredients to meet the highest clean beauty standards.<br/><br/><strong>No Parabens | No Sulfates | No Synthetic Fragrance | No Mineral Oil | No Phthalates | No Formaldehyde | No Petroleum | No Phenoxyethanol</strong></p><p></p><p><a href=\"https://www.discoverokta.com/pages/about\" target=\"_blank\" title=\"https://www.discoverokta.com/pages/about\">LEARN MORE</a></p>"
           }
         }
       },
@@ -335,7 +335,7 @@
         "text_7nEpgz": {
           "type": "text",
           "settings": {
-            "text": "<p>We invite you to explore the opportunity of Joining us as a Brand or Retail Partner. Our services include the exclusive distribution, brand development, and sales strategy for your brand within our portfolio. Our expertise lies in enhancing visibility in esteemed retailers, complemented by our regional logistics proficiency and a personalized approach to seamlessly guide and optimize your market entry. We extend a warm invitation for you to explore a partnership that ensures your brand's success and growth.</p>"
+            "text": "<p>With expertise in exclusive distribution, brand development, and sales strategy, we help grow your brand's visibility in leading retailers and points of sale. Our personalized approach and strong regional logistics ensure a smooth and successful market entry for your brand.</p>"
           }
         },
         "button_FjyRPe": {
@@ -377,7 +377,14 @@
           "settings": {
             "title": "@DISCOVEROKTA",
             "title_color": "#203d34",
+            "title_size_v2": 0,
             "alignment": "center",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "margin_sides": 0,
+            "show_instagram_link": false,
+            "link_alignment": "left",
+            "link_color": "#000000",
             "background_color": "",
             "feed_id": "",
             "html_area": ""
